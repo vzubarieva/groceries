@@ -10,8 +10,14 @@ $(document).ready(function () {
     items.forEach(function (item) {
       $("#output").append("<li>" + item + "</li>");
     });
-    let items2 = [];
-    items2 = items2.toUpperCase();
-    item2 = [items];
+
+    let itemsUppercase = [];
+    items.forEach(function (item) {
+      itemsUppercase.push(item.toUpperCase());
+    });
+    itemsUppercase.forEach(function (item) {
+      $("#output2").append("<li>" + item + "</li>");
+    });
+
   });
 });
